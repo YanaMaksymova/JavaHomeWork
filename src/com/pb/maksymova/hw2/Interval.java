@@ -4,8 +4,6 @@ import java.util.Scanner;
 
 public class Interval {
     public static void main(String[] args) {
-        System.out.println("Введите целое число:");
-
         Scanner scan = new Scanner(System.in);
         int x;
 
