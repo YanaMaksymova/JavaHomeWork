@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Anagram {
 
     static String cleanChar(String s) {
-        String newS = s.replaceAll("\\W", "").toLowerCase();
+        String newS = s.replaceAll("[^а-яА-Я0-9a-zA-Z]", "").toLowerCase();
         return newS;
     }
 
@@ -28,6 +28,9 @@ public class Anagram {
         System.out.println("Введите вторую строку:");
         String input1 = scan.nextLine();
         boolean output = isAnagram(input0,input1);
-        System.out.println(output);
+        if (output == true){
+            System.out.println("Анаграмма");
+        }
+        System.out.println("Не является анаграммой");
     }
 }
